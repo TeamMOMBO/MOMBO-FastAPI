@@ -8,7 +8,10 @@ from app.utils import correct_ingredient
 model = load_fasttext_model()
 
 # FastAPI 초기화
-app = FastAPI()
+app = FastAPI(title="유해성분명 교정 API",
+    description="OCR 결과를 기반으로 유해성분명을 교정하는 API입니다.",
+    version="1.0.0",
+)
 
 
 # 입력 데이터 형식 정의
