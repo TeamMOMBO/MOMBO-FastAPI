@@ -109,7 +109,7 @@ def correct_ingredient(model: FastText, ingredient: str, threshold: float = 0.95
 
     # 입력된 성분명의 길이에 따라 편집 거리 임계값 설정
     if jamo_ingredient_length <= 10:
-        edit_distance_threshold = 3
+        edit_distance_threshold = 1
     else:
         edit_distance_threshold = 5
 
